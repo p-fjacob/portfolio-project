@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>BurgerMenue</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" transform="translate(-268.000000, -15.000000)" fill-rule="nonzero">
+            <g id="BurgerMenue" transform="translate(268.000000, 15.000000)">
+                <rect id="Rectangle" fill="#BD10E0" x="0" y="0" width="40" height="40" rx="2"></rect>
+                <rect id="Rectangle" fill="#000000" x="5" y="7" width="30" height="6"></rect>
+                <rect id="Rectangle-Copy" fill="#000000" x="5" y="17" width="30" height="6"></rect>
+                <rect id="Rectangle-Copy-2" fill="#000000" x="5" y="27" width="30" height="6"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
