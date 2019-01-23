@@ -39,6 +39,11 @@ a {
   }
 */
 
+/*.box {
+    min-height: 128px;
+  }
+*/
+
 .header {
     background-color: rgb(230, 230, 230);
     color: #000000;
