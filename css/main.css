@@ -32,6 +32,7 @@ p {
 
 a {
     color: black;
+    font-style: italic;
 }
 
 /*.box {
@@ -92,27 +93,38 @@ a {
     background-color: rgb(160, 160, 160);
     height: 60px;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
-.project1-img {
+.project-img {
     height: 60px;
     width: 90px;
     align-self: flex-start;
+}
+.project-text {
+    height: 60px;
+    width: 70%;
 }
 
 .project2 {
     background-color: rgb(140, 140, 140);
     height: 60px;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .project3 {
     background-color: rgb(120, 120, 120);
     height: 60px;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .project4 {
     background-color: rgb(100, 100, 100);
     height: 60px;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .footer {
@@ -141,6 +153,26 @@ a {
       display: flex;
       flex-wrap: wrap;
   }
+
+  .project1 {
+      display: flex;
+      flex-wrap: nowrap;
+  }
+
+  .project2 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.project3 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.project4 {
+    display: flex;
+    flex-wrap: nowrap;
+}
 
   .box {
     width: 100%;
