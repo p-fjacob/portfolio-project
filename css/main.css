@@ -39,6 +39,7 @@ a {
     background-color: rgb(230, 230, 230);
     color: #000000;
     min-height: 40px;
+    height: 10%;
     padding-top: 2.5%;
     padding-left: 2.5%;
     padding-right: 2.5%;
@@ -66,12 +67,25 @@ a {
 }
 
 .introduction {
+    width: 100%;
+    position: relative;
+    background-image: url(../img/portrait.png);
+    background-size: cover;
     height: 160px;
+}
+
+
+.introtext {
+    height: 5%;
+    width: 100%;
+    align-self: flex-start;
+    padding-left: 2.5%;
 }
 
 .projectList {
     background-color: rgb(230, 230, 230);
-    height: 280px;
+    min-height: 280px;
+    height: 50%;
     align-items: flex-start;
     justify-content: space-between;
 }
@@ -81,6 +95,7 @@ a {
     height: 60px;
     align-items: flex-start;
     justify-content: space-between;
+    flex:1 1 auto;
 }
 
 .project-img {
@@ -117,7 +132,7 @@ a {
 .footer {
     background-color: white;
     color: #BD10E0;
-    height: 48px;
+    height: auto;
     padding-top: 1%;
     padding-left: 2.5%;
 }
@@ -128,6 +143,7 @@ a {
 .container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     height: 100%;
     align-items: flex-start;
     justify-content: flex-start;
@@ -172,16 +188,14 @@ a {
   /* optimized for iPad */
 
   @media screen and (min-width: 380px) {
-      /*.box {
-          min-height: auto;
-      }*/
 
       .introduction {
           width: 50%;
       }
 
-      .headline {
+      .introtext {
           width: 50%;
+          flex: 1 0 auto;
       }
   }
 
