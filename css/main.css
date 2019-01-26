@@ -9,11 +9,23 @@ html, body, main {
     padding: 0;
   }
 
+  h1 {
+    display: block;
+    font-family: 'Roboto';
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
   h2 {
     display: block;
     font-family: 'Roboto';
     font-size: 1em;
     font-weight: bold;
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
 }
 
 a {
@@ -56,18 +68,9 @@ a {
   .title {
       height: 100%;
       width: 70%;
-      text-align: left;
+      text-align: right;
       align-self: flex-start;
-  }
-
-  .burger {
-    position: relative;
-    background-image: url(../img/burgerMenue.svg);
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    align-self: flex-start;
-    flex: 1 1 0%;
+      margin-right: 7%;
   }
 
   .introduction {
@@ -154,12 +157,6 @@ a {
     .project4 {
         width: 50%;
         height: 20%;
-    }
-}
-
-@media screen and (min-width: 800px) {
-    .burger {
-        display: none;
     }
 }
 
