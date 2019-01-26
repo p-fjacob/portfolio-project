@@ -2,256 +2,168 @@
 
 /* default styles */
 
-html, body {
+html, body, main {
+    height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
   }
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  h2 {
+    display: block;
+    font-family: 'Roboto';
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-h1 {
-    font-size: 1.2em;
-    text-align: left;
-}
-
-h2 {
-    font-size: 0.8em;
-    text-align: left;
-    font-style: italic; 
-}
-
-h3 {
-    font-size: 0.5em;
-}
-
-p {
-    font-size: 0.3em;
-}
-
-a {
-    color: black;
-    font-style: italic;
-}
-
-.header {
-    background-color: rgb(230, 230, 230);
-    color: #000000;
-    min-height: 40px;
-    height: 10%;
-    padding-top: 2.5%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    padding-bottom: 2.5%;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.logo {
-    width: 40px;
-    height: 40px;
-    align-self: flex-start;
-}
-
-.headline {
-    padding-left: 2.5%;
-    width: 70%;
-    align-self: flex-start;
-}
-
-.burgerMenue {
-    width: 40px;
-    height: 40px;
-    align-self: flex-start;
-}
-
-.introduction {
-    width: 100%;
-    position: relative;
-    background-image: url(../img/portrait-fullsize.png);
-    background-size: cover;
-    height: 160px;
-}
-
-
-.introtext {
-    height: 5%;
-    width: 100%;
-    align-self: flex-start;
-    padding-left: 2.5%;
-}
-
-.projectList {
-    background-color: rgb(230, 230, 230);
-    min-height: 280px;
-    height: 50%;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.project1 {
-    background-color: rgb(160, 160, 160);
-    height: 60px;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex:1 1 auto;
-}
-
-.project-img {
-    height: 60px;
-    width: 90px;
-    align-self: flex-start;
-}
-.project-text {
-    height: 60px;
-    width: 70%;
-}
-
-.project2 {
-    background-color: rgb(140, 140, 140);
-    height: 60px;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.project3 {
-    background-color: rgb(120, 120, 120);
-    height: 60px;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.project4 {
-    background-color: rgb(100, 100, 100);
-    height: 60px;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.footer {
-    background-color: white;
-    color: #BD10E0;
-    height: auto;
-    padding-top: 1%;
-    padding-left: 2.5%;
-}
-
-
-/* styles to define the responsiveness */
+  /* styles to define the responsiveness */
 
 .container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     height: 100%;
+    width: 100%;
     align-items: flex-start;
     justify-content: flex-start;
   }
 
   .header {
-      display: flex;
-      flex-wrap: nowrap;
-  }
-
-  .projectList {
-      display: flex;
-      flex-wrap: wrap;
-  }
-
-  .project1 {
-      display: flex;
-      flex-wrap: nowrap;
-  }
-
-  .project2 {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-direction: row;
+      background-color: aqua;
+      height: 10%;
+      width: 100%;
+      align-items: flex-start;
+      justify-content: space-between;
+  }
+
+  .logo {
+    position: relative;
+    background-image: url(../img/logo.svg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: flex-start;
+    flex: 1 1 0%;
+  }
+
+  .title {
+      height: 100%;
+      width: 70%;
+      text-align: left;
+      align-self: flex-start;
+  }
+
+  .burger {
+    position: relative;
+    background-image: url(../img/burgerMenue.svg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: flex-start;
+    flex: 1 1 0%;
+  }
+
+  .introduction {
+    position: relative;
+    background-image: url(../img/portrait-fullsize.png);
+    background-size: cover;
+    height: 30%;
+    width: 100%;
+}
+
+.project1 {
+    background-color: rgb(50, 136, 136);
+    height: 10%;
+    width: 100%;
+}
+
+.project2 {
+    background-color: rgb(22, 87, 87);
+    height: 10%;
+    width: 100%;
 }
 
 .project3 {
-    display: flex;
-    flex-wrap: nowrap;
+    background-color: rgb(7, 51, 51);
+    height: 10%;
+    width: 100%;
 }
 
 .project4 {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-  .box {
+    background-color: rgb(1, 20, 20);
+    height: 10%;
     width: 100%;
-  }
+}
 
-  /* media queries / breakpoints */
+.footer {
+    background-color: aqua;
+    height: 5%;
+    width: 100%;
+    text-align: center;
+    padding-top: 3%;
+}
 
-  /* optimized for iPad */
+/* media queries */
 
-  @media screen and (min-width: 380px) {
-
-      .introduction {
-          min-height: 160px;
-          height: 320px;
-      }
-
-      .introtext {
-          width: 50%;
-          flex: 1 0 auto;
-      }
-  }
-
-  @media screen and (min-width: 550px) {
+@media screen and (min-width: 600px) {
 
     .project1 {
         width: 50%;
+        height: 20%;
     }
 
     .project2 {
         width: 50%;
+        height: 20%;
     }
 
     .project3 {
         width: 50%;
+        height: 20%;
     }
 
     .project4 {
         width: 50%;
+        height: 20%;
     }
 }
 
-@media screen and (min-width: 801px) {
-
-    .burgerMenue {
-      display: none;
-    }
-
-    .projectList {
-        align-items: stretch;
-    }
-
-    .project1 {
-        width: 25%;
-    }
-
-    .project2 {
-        width: 25%;
-    }
-
-    .project3 {
-        width: 25%;
-    }
-
-    .project4 {
-        width: 25%;
+@media screen and (min-width: 800px) {
+    .burger {
+        display: none;
     }
 }
-
-  /* optimized for desktop */
 
 @media screen and (min-width: 1024px) {
-    .container {
-          width: 1024px;
-          margin-left: auto;
-          margin-right: auto;
+
+    .project1 {
+        width: 25%;
+        height: 40%;
     }
+
+    .project2 {
+        width: 25%;
+        height: 40%;
+    }
+
+    .project3 {
+        width: 25%;
+        height: 40%;
+    }
+
+    .project4 {
+        width: 25%;
+        height: 40%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+  }
 }
